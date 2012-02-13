@@ -1,6 +1,15 @@
 public class BofP_lab1{
-        public static void main(String [] args){
-                System.out.println("Hello World!");
+	private int[] array;
+	private void workWithArray(int size){
+		array = new int[size];
+		for(int i=0;i<size;i++){
+			array[i]=i+1;
+			System.out.print(array[i]+" ");
+		}
+	}
+	public static void main(String [] args){
+                BofP_lab1 b = new BofP_lab1();
+		b.workWithArray(15);
         }
 }  
 
